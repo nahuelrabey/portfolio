@@ -1,0 +1,16 @@
+#frame{
+  width: 65%;
+  margin: auto
+}
+
+#name {
+  color: Red;
+}
+
+#kind {
+  font-size: 1.35em;
+}
+
+#desc {
+  font-size: .90em;
+}
