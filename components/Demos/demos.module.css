@@ -1,0 +1,16 @@
+.demos h3 {
+  display: inline-block;
+}
+.demos ul {
+  display: inline-block;
+}
+.demos ul li {
+  display: inline-block;
+  list-style: none;
+}
+.demos ul li a {
+  text-decoration: none;
+}
+.demos ul li a:visited {
+  color: black;
+}
