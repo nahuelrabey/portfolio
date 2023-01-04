@@ -29,7 +29,7 @@ export default function Home() {
             <a href='https://www.linkedin.com/in/nahuel-rabey-260857180/' target="_blank" rel="noreferrer">linkedin</a>, <a href="https://twitter.com/rabey_n" target="_blank" rel="noreferrer">twitter</a>, <a href='https://github.com/nahuelrabey' target="_blank" rel="noreferrer">github</a>{"]"} <br/>
             &emsp;email='nahuelrabeywork@gmail.com'<br/>
             &emsp;demos=[
-              <a href='http://unitcircle.nahuelrabey.com/' target="_blank" rel="noreferrer">unit_circle</a>, <a href='http://dividers.nahuelrabey.com/'>dividers</a>
+              <a href='http://unitcircle.nahuelrabey.com/' target="_blank" rel="noreferrer">unit_circle</a>, <a href='http://dividers.nahuelrabey.com/' target="_blank" rel="noreferrer">dividers</a>
             ]<br/>
             {"/>"}
             </p>
