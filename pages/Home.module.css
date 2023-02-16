@@ -1,73 +1,41 @@
-#frame{
-  width: 65%;
-  margin: auto;
-}
-
-#name {
-  color: Red;
-}
-
-.prop {
-  font-style: italic;
-  color: #3DD91E;
-}
-
-#kind {
-  font-size: 1.35em;
-  line-height: 1.25em;
-}
-
-#kind a{
-  text-decoration: none;
-}
-
-#kind a:visited{
-  color: black;
-}
-
-#kind a:hover {
-  transition: all .25s;
-  color: #3DD91E;
-}
-
-#desc {
-  font-size: .90em;
-  text-align: justify;
-}
-
-.cardDeck {
+.home header {
+  height: 100vh;
   display: flex;
-  margin: 2em 0;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.card {
-  width: 30%;
-}
-.card h3{
-  text-align: center;
-}
-.card p{
-  text-align: justify;
-  font-size: small;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(
+    45deg,
+    rgba(4, 4, 4, 1) 0%,
+    rgb(20, 20, 20) 100%
+  );
+
+  color: rgb(210, 210, 210);
+  letter-spacing: 0.09em;
 }
 
-@media screen and (max-width: 500px){
-  #kind {
-    font-size: medium;
-  }
+.hello {
+  animation: fadeIn 4s;
+  height: 10em;
 }
 
-@media screen and (max-width: 800px) {
-  #frame {
-    margin: 5%;
-    width: 95%;
-  }
-  .cardDeck{
-    display: block;
-    margin: none;
-  }
-  .card{
-    width: 100%;
-  }
+.home h1 {
+  font-size: 3em;
+  margin-bottom: 3vh;
+}
+
+.home h2 {
+  font-size: 2em;
+  /* margin-bottom: 2vh; */
+  font-weight: 200;
+}
+
+.home span {
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.blob {
+  position: relative;
+  width: 40vw;
+  height: 40vw;
 }
