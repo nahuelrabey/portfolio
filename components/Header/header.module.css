@@ -1,0 +1,43 @@
+.header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(
+    45deg,
+    rgba(4, 4, 4, 1) 0%,
+    rgb(20, 20, 20) 100%
+  );
+
+  color: rgb(210, 210, 210);
+  letter-spacing: 0.09em;
+}
+
+
+.header h1 {
+  font-size: 3em;
+  margin-bottom: 3vh;
+}
+
+.header h2 {
+  font-size: 2em;
+  /* margin-bottom: 2vh; */
+  font-weight: 200;
+}
+
+.header span {
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.hello {
+  animation: fadeIn 4s;
+  height: 10em;
+  width: 40vw;
+}
+
+.blob {
+  position: relative;
+  width: 40vw;
+  height: 40vw;
+}
