@@ -5,6 +5,7 @@ import { GetServerSideProps } from "next";
 import { ISkill } from "../components/Skills";
 import Header from "../components/Header";
 import style from "./Home.module.css";
+import Experience from "../components/Experience";
 
 // fonts
 const inter = Inter({ subsets: ["latin"] });
@@ -21,7 +22,7 @@ export default function Home({ skills }: params) {
       </Head>
       <main style={inter.style}>
         <Header skills={skills} />
-        <section className={style.experiencia}>
+        {/* <section className={style.experiencia}>
           <h2>Experiencia laboral</h2>
           <div className={style.timeline}>
             <article className={style.job}>
@@ -110,7 +111,8 @@ export default function Home({ skills }: params) {
             </article>
           </div>
 
-        </section>
+        </section> */}
+        <Experience/>
         <section className={style.footer}>
           <h2>CONTACT</h2>
           <p>
