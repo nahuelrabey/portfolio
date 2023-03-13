@@ -3,3 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+h2 {
+  margin: 1em 0;
+  font-size: 3em;
+  font-weight: 400;
+}

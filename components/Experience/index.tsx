@@ -2,13 +2,13 @@ import style from "./Experience.module.css";
 export default function Experience() {
   return (
       <section className={style.experiencia}>
-        <h2>Experiencia laboral</h2>
+        <h2>Proyectos Destacados</h2>
         <div className={style.timeline}>
           <article className={style.job}>
             <div className={style.content}>
               <header>
                 <h3>Sistema de datos de mercado</h3>
-                <span>2020-2023</span>
+                <span>2020-2023, uQuant</span>
               </header>
               <p>
                 Diseñar e implementar una interfaz de programación para consumir
@@ -49,7 +49,7 @@ export default function Experience() {
                 <div>
                   <a
                     className={style.demo}
-                    href="https://uquant.com.ar"
+                    href="https://www.uquant.com.ar/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -63,7 +63,7 @@ export default function Experience() {
             <div className={style.content}>
               <header>
                 <h3>Sistema de datos electorales</h3>
-                <span>2019-2020</span>
+                <span>2019-2020, Asociación Civil 18 de Diciembre</span>
               </header>
               <p>
                 Crear un sistema que acompañe la logística de afiliaciones en
