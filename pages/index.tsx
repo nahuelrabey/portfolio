@@ -3,7 +3,6 @@ import { Inter } from "@next/font/google";
 import { GetServerSideProps } from "next";
 import { ISkill } from "../components/Skills";
 import Header from "../components/Header";
-import style from "./Home.module.css";
 import Experience from "../components/Experience";
 import Services from "../components/Services";
 import Footer from "../components/Footer";

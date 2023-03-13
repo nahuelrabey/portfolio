@@ -12,9 +12,14 @@
   width: 70vw;
 }
 
+.content >* {
+    margin: 6vh 0;
+}
+
 .content h2 {
   font-size: 3em;
   font-weight: 200;
+  line-height: 1em;
 }
 
 .content p {
@@ -25,17 +30,39 @@
 }
 
 .networks {
-  margin: 1em 0;
+  /* margin: 1em 0; */
   display: flex;
   justify-content: left;
-  align-items: end;
-  gap: 1em;
+  align-items: center;
+  gap: 2em;
 }
 
 .social {
   display: block;
-  font-size: 2.5em;
+  font-size: 4em;
+  color: white;
+  line-height: 0;
+  position: relative;
 }
+.social:hover {
+    cursor: pointer;
+}
+
+.social:hover::after{
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: rgb(255,39,0);
+    bottom: -.2em;
+    height: 2px;
+    left: 0;
+    right:0;
+}
+
+.social:active::after{
+    background-color: white;
+}
+
 
 .directContact {
   display: block;
@@ -44,6 +71,18 @@
   width: 100%;
   background: none;
   border: 1px solid white;
-  border-radius: .5em;
+  border-radius: 0.5em;
   color: white;
+  user-select: text;
+}
+
+.directContact:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black
+}
+
+.directContact:active {
+    background-color: black;
+    color: white
 }
