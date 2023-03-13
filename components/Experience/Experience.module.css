@@ -3,6 +3,12 @@
   margin: auto;
 }
 
+@media screen and (max-width: 769px){
+    .experiencia {
+      width: 80vw;
+    }
+}
+
 @media screen and (max-width: 426px){
     .experiencia {
       width: 90vw;
@@ -26,7 +32,7 @@
   /* position: relative; */
 }
 
-@media screen and (max-width: 426px){
+@media screen and (max-width: 769px){
     .timeline {
       width: 100%
     }
