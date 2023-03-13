@@ -1,9 +1,22 @@
 .experiencia {
-  margin: auto;
   width: 70vw;
+  margin: auto;
 }
+
+@media screen and (max-width: 426px){
+    .experiencia {
+      width: 90vw;
+    }
+}
+
 .experiencia h2 {
   margin: 10vh auto;
+}
+
+@media screen and (max-width: 426px){
+    .experiencia h2 {
+      margin: 5vh auto;
+    }
 }
 
 .timeline {
@@ -11,6 +24,12 @@
   margin: auto;
   width: 55vw;
   /* position: relative; */
+}
+
+@media screen and (max-width: 426px){
+    .timeline {
+      width: 100%
+    }
 }
 
 .timeline::after {
@@ -42,6 +61,17 @@
   border-radius: 50%;
 }
 
+@media screen and (max-width: 426px){
+    .job {
+      width: 100%;
+      left: 20px;
+    }
+
+    .job::after{
+      left: -26px;
+    }
+}
+
 .content {
   /* border: 1px solid black; */
   background-color: rgb(10, 10, 10);
@@ -61,6 +91,18 @@
 .content h4,
 .content p {
   margin-bottom: 1em;
+}
+
+@media screen and (max-width: 426px){
+    .content {
+      padding: 0.5em;
+    }
+    .content h3 {
+      font-size: 1em;
+    }
+    .content p, .content span {
+      font-size: .8em;
+    }
 }
 
 .content ul li {
