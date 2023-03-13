@@ -12,8 +12,18 @@
   width: 70vw;
 }
 
-.content >* {
-    margin: 6vh 0;
+.content p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 769px) {
+  .content {
+    width: 90vw;
+  }
+}
+
+.content > * {
+  margin: 6vh 0;
 }
 
 .content h2 {
@@ -30,43 +40,58 @@
 }
 
 .networks {
-  /* margin: 1em 0; */
+  margin-top: 2vh;
   display: flex;
-  justify-content: left;
-  align-items: center;
+  justify-content: center;
   gap: 2em;
+}
+
+.personal .directContact {
+  margin-top: 2vh;
+}
+.contact {
+  display: block;
+}
+.personal {
+  display: block;
 }
 
 .social {
   display: block;
-  font-size: 4em;
+  font-size: 2.5em;
   color: white;
   line-height: 0;
   position: relative;
 }
+
+@media screen and (max-width: 769px) {
+  .social {
+    font-size: 2.5em;
+  }
+}
+
 .social:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.social:hover::after{
-    content: '';
-    position: absolute;
-    display: block;
-    background-color: rgb(255,39,0);
-    bottom: -.2em;
-    height: 2px;
-    left: 0;
-    right:0;
+.social:hover::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: rgb(255, 39, 0);
+  bottom: -0.2em;
+  height: 2px;
+  left: 0;
+  right: 0;
 }
 
-.social:active::after{
-    background-color: white;
+.social:active::after {
+  background-color: white;
 }
-
 
 .directContact {
   display: block;
-  padding: .5em 0em;
+  padding: 0.5em 0em;
   font-size: 1.5em;
   width: 100%;
   background: none;
@@ -74,15 +99,17 @@
   border-radius: 0.5em;
   color: white;
   user-select: text;
+  text-align: center;
+  text-decoration: none;
 }
 
-.directContact:hover{
-    cursor: pointer;
-    background-color: white;
-    color: black
+.directContact:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
 }
 
 .directContact:active {
-    background-color: black;
-    color: white
+  background-color: black;
+  color: white;
 }
