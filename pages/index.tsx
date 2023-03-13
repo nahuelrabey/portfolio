@@ -66,6 +66,9 @@ export default function Home({ skills }: params) {
                     utilizando Rollup y separando el proceso de dockerización en
                     varias etapas.
                   </span>
+                  <div>
+                  <a className={style.demo} href="https://uquant.com.ar" target="_blank" rel="noreferrer">Ver sitio</a>
+                  </div>
                 </ul>
               </div>
             </article>

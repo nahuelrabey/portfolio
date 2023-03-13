@@ -68,6 +68,23 @@ font-size: 2em;
   margin: 1em 2em;
 }
 
+.demo {
+  display: block;
+  padding: .5em;
+  border-radius: .5em;
+  text-align: center;
+  margin-top: 1.25em;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  background-color: white;
+  transition: all .25s;
+}
+
+.demo:hover {
+  box-shadow: 0px 0px 3px 1px rgb(255, 0, 0);
+
+}
 
 .footer {
   height: 100vh;
