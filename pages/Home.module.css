@@ -1,60 +1,50 @@
-.servicesSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120vh;
-}
-
-.container {
-  width: 70vw;
-}
-
-.container h2 {
-  margin: 1em 0;
-  font-size: 3em;
-  font-weight: 400;
-}
-
-.services {
-  display: flex;
-  justify-content: space-between;
-}
-
-.service {
-  padding: 1em;
-  border: 3px solid rgb(29, 29, 29);
-  border-radius: .5em;
-  width: 30%;
-  letter-spacing: .04em;
-  line-height: 1.5em;
-}
-
-.service h3 {
-  margin-bottom: .7em;
-}
-
-.service h4:first-of-type {
-  margin-bottom: .5em;
-}
-
-.service h4 {
-  margin: .5em 0;
-}
-
-.service li {
-  /* list-style: none; */
-  margin-left: 2em;
-}
-
-.prices {
-  width: 100%;
-}
-
-.cost {
-  text-align: right;
-}
 
 .footer {
   height: 100vh;
   background-color: black;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 70vw;
+}
+
+.content h2 {
+  font-size: 3em;
+  font-weight: 200;
+}
+
+.content p {
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.09;
+  font-size: 1.5em;
+}
+
+.networks {
+  margin: 1em 0;
+  display: flex;
+  justify-content: left;
+  align-items: end;
+  gap: 1em;
+}
+
+.social {
+  display: block;
+  font-size: 2.5em;
+}
+
+.directContact {
+  display: block;
+  padding: .5em 0em;
+  font-size: 1.5em;
+  width: 100%;
+  background: none;
+  border: 1px solid white;
+  border-radius: .5em;
+  color: white;
 }
