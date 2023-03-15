@@ -55,7 +55,6 @@ function PhoneNumber() {
   const [isMobile, setMobile] = useState(mobile())
 
   useEffect(()=>{setMobile(mobile())}, [])
-  console.log("is mobile ", isMobile)
   if (isMobile) {
     return (
       <a href="tel:+5491132134807" className={style.directContact}>
@@ -75,7 +74,6 @@ function DirectContact({ children }: params) {
   const copyContent = async () => {
     try {
       await navigator.clipboard.writeText(children);
-      console.log("Content copied to clipboard");
     } catch (err) {
       console.error("Failed to copy: ", err);
     }

@@ -24,7 +24,6 @@ export default function Skills({ content }: params) {
                 index.current += 1;
             }
             setSkill(() => skillSets[index.current])
-            console.log("end", index.current)
         }, 4000)
 
         return () => { clearInterval(interval) }
