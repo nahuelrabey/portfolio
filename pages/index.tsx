@@ -17,15 +17,23 @@ export default function Home({ skills }: params) {
     <>
       <Head>
         <title>Nahuel Rabey</title>
-        <meta name="description" content="Personal portfolio" />
+        <meta
+          name="description"
+          content="Conmigo tenes todo lo necesario para tener una página web. No importa si necesitás una tienda, un blog o mostrar datos de mercado en vivo. Diseño soluciones a medida para tus necesidades y objetivos."
+        />
+        <meta name="keywords" content="programador, desarrollador web, diseñador web, diseño web, desarrollo web,programador en Buenos Aires, desarrollador web en Buenos Aires, diseñador web en Buenos Aires" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/cxNDrPK/Facebook-post-1.png"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main style={inter.style}>
         <Header skills={skills} />
         <Services />
         <Experience />
-        <Footer/>
+        <Footer />
       </main>
     </>
   );
