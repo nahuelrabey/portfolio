@@ -5,6 +5,7 @@ import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { IBM_Plex_Sans, Inter } from "@next/font/google";
+import Footer from "../../../components/Footer";
 
 const text = Inter({
   subsets: ["latin"],
@@ -118,36 +119,91 @@ export default function Post() {
       <div className={style.tip}>
         <h2>Una lista de servicios</h2>
 
-        <p>
+        <p className={style.parr}>
           Las soluciones que das, con beneficios y testimonios de clientes
-          anteriores. No es recomendable poner precios porque puede no reflejar
-          la realidad del trabajo, y también evita que se comuniquen con
-          nosotros. Sí se recomienda una breve descripción que apunte a las
+          anteriores. Debe incluir una breve descripción que apunte a las
           necesidades que resuelve.
         </p>
-        <p>
-          Auditoría web: Analizo tu página web y te doy recomendaciones para
-          mejorarla en aspectos técnicos, de diseño, de contenido y de
-          conversión.
-        </p>
+
+        <div className={style.example}>
+          <div className={style.serviceExample}>
+            <div className={style.serviceDesc}>
+              <h3>Auditoría Web</h3>
+              <p>
+                Analizo tu página web y te doy recomendaciones para mejorarla en
+                aspectos técnicos, de diseño, de contenido y de llegada a nuevos
+                clientes.
+              </p>
+            </div>
+            <div className={style.illustration}>
+              <Image
+                src="/illustration/general-web.svg"
+                alt="auditoría web illustration"
+                fill
+                style={{ objectFit: "fill" }}
+              />
+            </div>
+          </div>
+        </div>
 
         {/* comentario de usario ejemplo */}
-        <div>
+
+        {/* <div>
           <span>Nico</span>
           <p>
             Es un gran profesional, muy atento y cercano. Siempre está
             disponible para resolver cualquier duda o problema que surja. Estoy
             muy contento con su servicio y lo recomiendo al 100%
           </p>
-        </div>
+        </div> */}
       </div>
 
       <div className={style.tip}>
-        <h2>
-          Una sección de portfolio o casos de estudio que demuestren tus
-          resultados e impacto en los negocios de tus clientes
-        </h2>
+        <h2>Un portfolio</h2>
+        <p className={style.parr}>
+          trabajos o casos de estudio que demuestren tus resultados e impacto en
+          los negocios de tus clientes
+        </p>
+        <div className={style.example}>
+          <div className={style.portfolioExample}>
+            <div className={style.element}>
+              <div className={style.image}>
+                <Image
+                  src="/images/ecommerce.jpg"
+                  fill
+                  style={{ objectFit: "cover" }}
+                  alt="fake project image"
+                />
+              </div>
+              <span className={style.incName}>Wisoky-Block marketplace</span>
+            </div>
+            <div className={style.element}>
+              <div className={style.image}>
+                <Image
+                  src="/images/pexels.jpg"
+                  fill
+                  style={{ objectFit: "cover" }}
+                  alt="fake project image"
+                />
+              </div>
+              <span className={style.incName}>Mann Inc website</span>
+            </div>
+            <div className={style.element}>
+              <div className={style.image}>
+                <Image
+                  src="/images/shagger.jpg"
+                  fill
+                  style={{ objectFit: "cover" }}
+                  alt="fake project image"
+                />
+              </div>
+              <span className={style.incName}>Shagger app</span>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <Footer/>
     </section>
   );
 }
