@@ -10,6 +10,14 @@ export default function Post() {
     <>
       <Head>
         <title>Cómo ahorrar tiempo y dinero con un diseñador web</title>
+        <meta
+          name="description"
+          content="¿Quieres ahorrar dinero y tiempo en tu proyecto web? Acá te cuento porqué contratar a un desarrollador profesional te garantizará calidad y eficiencia."
+        />
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/G2Z7qBs/ahorrar-tiempo-dinero.png"
+        />
       </Head>
       <Menu />
       <section className={style.post} style={inter.style}>
