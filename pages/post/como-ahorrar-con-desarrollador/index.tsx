@@ -9,7 +9,7 @@ export default function Post() {
   return (
     <>
       <Head>
-        <title>Cómo ahorrar tiempo y dinero con un desarrollador web</title>
+        <title>¿Porqué contratar un desarrollador web?</title>
         <meta
           name="description"
           content="¿Quieres ahorrar dinero y tiempo en tu proyecto web? Acá te cuento porqué contratar a un desarrollador profesional te garantizará calidad y eficiencia."
