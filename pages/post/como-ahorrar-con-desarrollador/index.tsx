@@ -16,7 +16,7 @@ export default function Post() {
         />
         <meta
           property="og:image"
-          content="https://i.ibb.co/G2Z7qBs/ahorrar-tiempo-dinero.png"
+          content="https://i.ibb.co/gJWwz7J/ahorrar-tiempo-dinero-1.png"
         />
       </Head>
       <Menu />
