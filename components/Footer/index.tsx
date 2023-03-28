@@ -8,6 +8,7 @@ import { Inter } from "@next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 export default function Footer() {
   return (
+    // <section className={style.footer} >
     <section className={style.footer} style={inter.style}>
       <div className={style.content}>
         <h2>Contacto</h2>
@@ -18,7 +19,6 @@ export default function Footer() {
         </p>
         <div className={style.contact}>
           <div className={style.personal}>
-            {/* <DirectContact>+59 11-3213-4807</DirectContact> */}
             <PhoneNumber/>
             <DirectContact>nahuelrabeywork@gmail.com</DirectContact>
           </div>

@@ -25,7 +25,7 @@
     padding: 10vw;
     // padding-top: 9;
     z-index: 2;
-    border-radius: .5em;
+    border-radius: 0.5em;
   }
 
   h1 {
@@ -43,5 +43,50 @@
     font-size: 1.25em;
     line-height: 1.35em;
     letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .post {
+    .content {
+      width: 80vw;
+      transform: translateY(-5%);
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .post {
+    .content {
+      width: 90vw;
+      transform: translateY(0);
+      padding: 5vw;
+    }
+    .cover {
+      position: relative;
+      width: 100vw;
+      height: 60vw;
+      // opacity: .2;
+      z-index: 1;
+      margin-bottom: 0;
+    }
+
+    h1{
+      font-size: 2em;
+    }
+    h2{
+      font-size: 1.5em;
+    }
+    p{
+      font-size: 1em;
+    }
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .post {
+    .content {
+      width: 100vw;
+    }
   }
 }

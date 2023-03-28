@@ -9,7 +9,7 @@ export default function Post() {
   return (
     <>
       <Head>
-        <title>Cómo ahorrar tiempo y dinero con un diseñador web</title>
+        <title>Cómo ahorrar tiempo y dinero con un desarrollador web</title>
         <meta
           name="description"
           content="¿Quieres ahorrar dinero y tiempo en tu proyecto web? Acá te cuento porqué contratar a un desarrollador profesional te garantizará calidad y eficiencia."
@@ -30,7 +30,7 @@ export default function Post() {
           />
         </div>
         <div className={style.content}>
-          <h1>Cómo ahorrar tiempo y dinero con un diseñador web</h1>
+          <h1>Cómo ahorrar tiempo y dinero con un desarrollador web</h1>
 
           <p>
             ¿Estás pensando en crear una página web para tu negocio, proyecto o
@@ -113,7 +113,7 @@ export default function Post() {
           </p>
 
           <p>
-            Como ves, contratar a un diseñador o desarrollador web para hacer
+            Como ves, contratar a un desarrollador web para hacer
             una página web tiene muchas ventajas que pueden compensar con creces
             la inversión inicial. Si quieres tener una página web profesional,
             única y eficaz, no lo dudes y ponte en contacto conmigo. Te haré un

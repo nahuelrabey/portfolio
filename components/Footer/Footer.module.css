@@ -39,6 +39,18 @@
   font-size: 1.5em;
 }
 
+@media screen and (max-width: 426px) {
+  .content h2 {
+    font-size: 2em;
+    line-height: 1em;
+  }
+  .content p {
+    line-height: 2em;
+    letter-spacing: 0.09;
+    font-size: 1.25em;
+  }
+}
+
 .networks {
   margin-top: 2vh;
   display: flex;
@@ -67,6 +79,12 @@
 @media screen and (max-width: 769px) {
   .social {
     font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .social {
+    font-size: 2em;
   }
 }
 
@@ -112,4 +130,9 @@
 .directContact:active {
   background-color: black;
   color: white;
+}
+@media screen and (max-width: 426px) {
+  .directContact {
+    font-size: 1em;
+  }
 }
