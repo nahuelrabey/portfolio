@@ -3,9 +3,12 @@ import style from "./Footer.module.css";
 import { BsWhatsapp, BsTwitter, BsLinkedin } from "react-icons/bs";
 import mobile from "is-mobile"
 import { useEffect, useState } from "react";
+import { Inter } from "@next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 export default function Footer() {
   return (
-    <section className={style.footer}>
+    <section className={style.footer} style={inter.style}>
       <div className={style.content}>
         <h2>Contacto</h2>
         <p>
