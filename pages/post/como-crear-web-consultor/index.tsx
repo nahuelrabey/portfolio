@@ -7,6 +7,7 @@ import { BsGraphUpArrow } from "react-icons/bs";
 import { IBM_Plex_Sans, Inter } from "@next/font/google";
 import Footer from "../../../components/Footer";
 import Head from "next/head";
+import Menu from "../../../components/Menu";
 
 const text = Inter({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function Post() {
           content="https://i.ibb.co/B3DP3YV/post1.png"
         />
       </Head>
+      <Menu/>
       <section style={text.style}>
         <h1 className={style.title}>
           ¿Qué página web es efectiva para un consultor?{" "}

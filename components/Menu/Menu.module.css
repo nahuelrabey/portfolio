@@ -1,0 +1,16 @@
+.menu{
+    padding: 1em;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.item{
+    text-decoration: none;
+    color: white;
+    letter-spacing: .09em;
+    font-size: 1.25em;
+    font-weight: 300;
+}
