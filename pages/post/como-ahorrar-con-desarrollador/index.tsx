@@ -30,7 +30,7 @@ export default function Post() {
           />
         </div>
         <div className={style.content}>
-          <h1>Cómo ahorrar tiempo y dinero con un desarrollador web</h1>
+          <h1>¿Porqué contratar un desarrollador web?</h1>
 
           <p>
             ¿Estás pensando en crear una página web para tu negocio, proyecto o
