@@ -1,7 +1,13 @@
 import Post from "../Post";
 export default function Nota() {
   return (
-    <Post image="/images/servers.jpg">
+    <Post
+      image="/images/servers.jpg"
+      title="¿Cómo elegir la mejor nube para tu empresa?"
+      desc="En este artículo te explicamos cómo elegir el mejor proveedor de servicios en la nube según tus necesidades y objetivos. Descubre las ventajas y desventajas de las principales opciones del mercado"
+      keywords="proveedor de nube, guía para elegir proveedor de nube, ventajas y desventajas de los proveedores de nube, comparativa de proveedores de nube"
+      og_image="https://i.ibb.co/sKBvxtt/elegir-nube.png"
+    >
       <h1>
         Guía – ¿Cómo elegir el proveedor de servicios en la nube perfecto para
         tu empresa?
@@ -33,8 +39,8 @@ export default function Nota() {
       </p>
       <p>
         Los diarios y portales de noticias necesitan la capacidad de{" "}
-        <strong>manejar varios editores</strong>, periodistas, los pesos de
-        cada artículo, y por lo tanto manejar permisos (¿quién puede editar este
+        <strong>manejar varios editores</strong>, periodistas, los pesos de cada
+        artículo, y por lo tanto manejar permisos (¿quién puede editar este
         post?) y usuarios.
       </p>
       <p>
