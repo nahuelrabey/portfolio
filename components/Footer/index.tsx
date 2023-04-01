@@ -1,7 +1,7 @@
 import style from "./Footer.module.css";
 // import * as Tooltip from "@radix-ui/react-tooltip";
 import { BsWhatsapp, BsTwitter, BsLinkedin } from "react-icons/bs";
-import mobile from "is-mobile"
+import mobile from "is-mobile";
 import { useEffect, useState } from "react";
 import { Inter } from "@next/font/google";
 
@@ -19,7 +19,7 @@ export default function Footer() {
         </p>
         <div className={style.contact}>
           <div className={style.personal}>
-            <PhoneNumber/>
+            <PhoneNumber />
             <DirectContact>nahuelrabeywork@gmail.com</DirectContact>
           </div>
           <div className={style.networks}>
@@ -55,21 +55,18 @@ export default function Footer() {
 }
 
 function PhoneNumber() {
-  const [isMobile, setMobile] = useState(mobile())
+  const [isMobile, setMobile] = useState(mobile());
+  const [Contact, setContact] = useState<JSX.Element>(<></>);
 
-  useEffect(()=>{setMobile(mobile())}, [])
-  if (isMobile) {
-    return (
-      <a href="tel:+5491132134807" className={style.directContact}>
-        +59 11-3213-4807
-      </a>
-    );
-  }
-  return (
-    <DirectContact>
-      +59 11-3213-4807
-    </DirectContact>
-  )
+  useEffect(() => {
+    setMobile(mobile());
+    if (isMobile) {
+      setContact(<DirectContact>+59 11-3213-4807</DirectContact>);
+    }else{
+      setContact(<DirectContact>+59 11-3213-4807</DirectContact>)
+    }
+  }, [isMobile]);
+  return Contact
 }
 
 type params = { children: string };
