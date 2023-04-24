@@ -1,17 +1,13 @@
 import { Inter } from "@next/font/google";
 import Head from "next/head";
 import Image from "next/image";
-import Footer from "../../components/Footer";
-import Menu from "../../components/Menu";
+import Footer from "../Footer";
+import Menu from "../Menu";
 import style from "./Post.module.scss";
 const inter = Inter({ subsets: ["latin"] });
-export type PostParams = {
-  title: string;
-  image: string;
-  desc?: string;
-  keywords?: string;
-  og_image?: string;
-};
+
+import {PostParams} from "../../libs/posts"
+
 type params = PostParams & {
   children: JSX.Element[] | JSX.Element;
 };
