@@ -6,12 +6,12 @@ import Menu from "../../components/Menu";
 import style from "./Post.module.scss";
 const inter = Inter({ subsets: ["latin"] });
 type param = {
-  children: JSX.Element[];
+  title: string;
   image: string;
-  og_image?: string;
+  children: JSX.Element[];
   desc?: string;
-  title?: string;
   keywords?: string;
+  og_image?: string;
 };
 export default function Post({
   children,

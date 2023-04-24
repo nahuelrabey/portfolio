@@ -21,7 +21,7 @@ const headline = IBM_Plex_Sans({
 export default function Article() {
   return (
     <>
-      <Post image="/images/website.jpg">
+      <Post image="/images/website.jpg" title="¿Cómo es una web efectiva para un consultor?">
         <h1>¿Qué página web es efectiva para un consultor? </h1>
         <p>
           Si sos consultor, necesitas una página web que muestre tu experiencia,
