@@ -5,13 +5,15 @@ import Footer from "../../components/Footer";
 import Menu from "../../components/Menu";
 import style from "./Post.module.scss";
 const inter = Inter({ subsets: ["latin"] });
-type param = {
+export type PostParams = {
   title: string;
   image: string;
-  children: JSX.Element[];
   desc?: string;
   keywords?: string;
   og_image?: string;
+};
+type params = PostParams & {
+  children: JSX.Element[] | JSX.Element;
 };
 export default function Post({
   children,
@@ -19,8 +21,8 @@ export default function Post({
   og_image = "",
   desc = "",
   title = "",
-  keywords=""
-}: param) {
+  keywords = "",
+}: params) {
   return (
     <>
       <Head>
