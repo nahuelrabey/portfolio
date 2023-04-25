@@ -100,7 +100,7 @@ cuenta son:
     haces de los recursos que contratas. Por ejemplo, **por las horas** que usas
     un servidor, por **los gigabytes que almacenas**{" "} o por **los datos que
     transfieres** . Cuanto más uses, más pagarás.
-*   _Los extras_: Los proveedores pueden cobrar por servicios adicionales que no
+*   _Extras_: Los proveedores pueden cobrar por servicios adicionales que no
     están incluidos en el precio base. Por ejemplo, por el soporte técnico, por
     las copias de seguridad, por las actualizaciones, etc.
 
