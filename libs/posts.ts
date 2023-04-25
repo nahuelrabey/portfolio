@@ -25,7 +25,23 @@ function getPath() {
   return join(process.cwd(), `/posts`);
 }
 
-export function listPosts() {
+export function listPosts(){
+  const POSTS_PATH = getPath();
+  const files = fs.readdirSync(POSTS_PATH);
+  const posts = files.map((fname)=>{
+    const fileContent = fs.readFileSync(join(POSTS_PATH, fname), "utf-8")
+    const {data} = matter(fileContent)
+    if (!isPost(data)){
+      throw (
+        "data doesn't match post structure\n" + inspect(data, { depth: null })
+      );
+    }
+    return data
+  })
+  return posts
+}
+
+export function listSlugs() {
   const POSTS_PATH = getPath();
   const files = fs.readdirSync(POSTS_PATH);
   const slugs = files.map((fname)=>{

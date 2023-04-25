@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import { PostParams, listPosts, readPost } from "../../libs/posts";
+import { PostParams, listSlugs, readPost } from "../../libs/posts";
 import ReactMarkdown from "react-markdown";
 import Post from "../../components/Post";
 
@@ -26,7 +26,7 @@ export const getStaticPaths: GetStaticPaths<StaticParams> = async () => {
     };
   }
 
-  const posts = listPosts();
+  const posts = listSlugs();
   // Get the paths we want to prerender based on posts
   // In production environments, prerender all pages
   // (slower builds, but faster initial page load)
