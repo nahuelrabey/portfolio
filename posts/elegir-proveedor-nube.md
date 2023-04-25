@@ -1,8 +1,11 @@
 ---
-title: "¿Porqué contratar un desarrollador web?"
-image: "/images/money.jpg"
-og_image: "https://i.ibb.co/gJWwz7J/ahorrar-tiempo-dinero-1.png"
-desc: "¿Quieres ahorrar dinero y tiempo en tu proyecto web? Acá te cuento porqué contratar a un desarrollador profesional te garantizará calidad y eficiencia."
+title: Cómo elegir el mejor proveedor de nube para tu empresa o negocio
+image: /images/servers.jpg
+date: 20-04-2023
+og_image: 'https://i.ibb.co/gJWwz7J/ahorrar-tiempo-dinero-1.png'
+desc: >-
+     Te cuento los diferentes proveedores populares viendo las mejores opciones para micro, pequeñas y medianas empresas. 
+
 ---
 # Guía – ¿Cómo elegir el proveedor de servicios en la nube perfecto para tu empresa?
 

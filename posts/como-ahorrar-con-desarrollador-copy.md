@@ -1,5 +1,5 @@
 ---
-title: Porqué contratar un desarrollador web genera dinero
+title: Porqué contratar un desarrollador web
 image: /images/money.jpg
 date: 20-04-2023
 og_image: 'https://i.ibb.co/gJWwz7J/ahorrar-tiempo-dinero-1.png'

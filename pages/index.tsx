@@ -1,18 +1,21 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
-import { GetServerSideProps } from "next";
+import { GetServerSideProps, GetStaticProps } from "next";
 import { ISkill } from "../components/Skills";
 import Header from "../components/Header";
 import Experience from "../components/Experience";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
+import BlogFeed from "../components/BlogFeed";
+
+import {PostParams, listPosts} from "../libs/posts"
 
 // import {CiTwitter} from "react-icons/ci"
 // fonts
 const inter = Inter({ subsets: ["latin"] });
 
-type params = { skills: ISkill[] };
-export default function Home({ skills }: params) {
+type params = { skills: ISkill[], posts: PostParams[] };
+export default function Home({ skills, posts }: params) {
   return (
     <>
       <Head>
@@ -31,6 +34,7 @@ export default function Home({ skills }: params) {
       </Head>
       <main style={inter.style}>
         <Header skills={skills} />
+        <BlogFeed posts={posts}/>
         <Services />
         <Experience />
         <Footer />
@@ -39,7 +43,7 @@ export default function Home({ skills }: params) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps<params> = async () => {
+export const getStaticProps: GetStaticProps<params> = async () => {
   const skills: ISkill[] = [
     {
       title: "Software Developer",
@@ -55,9 +59,11 @@ export const getServerSideProps: GetServerSideProps<params> = async () => {
         "“El precio de la luz es menor que el costo de la oscuridad.” – Arthur C. Nielsen",
     },
   ];
+  const posts = listPosts()
   return {
     props: {
       skills,
+      posts
     },
   };
 };

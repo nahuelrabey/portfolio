@@ -14,6 +14,7 @@ type params = PostParams & {
 export default function Post({
   children,
   image,
+  date,
   og_image = "",
   desc = "",
   title = "",

@@ -8,6 +8,7 @@ import { join } from "path";
 export type PostParams = {
   title: string;
   image: string;
+  date: string;
   desc?: string;
   keywords?: string;
   og_image?: string;
@@ -15,6 +16,7 @@ export type PostParams = {
 
 export const isPost = objectOf<PostParams>({
   title: string,
+  date: string,
   image: string,
   desc: maybe(string),
   keywords: maybe(string),
