@@ -105,8 +105,8 @@ cuenta son:
     las copias de seguridad, por las actualizaciones, etc.
 
 Cualquiera de los proveedores que he presentado pueden tener costos muy bajos
-(desde los 5 USD), pero{" "} **una mala configuración puede dar lugar a facturas
-con precios inesperados** {" "} (por ejemplo, muchos usuarios en un momento dado
+(desde los 5 USD), pero **una mala configuración puede dar lugar a facturas
+con precios inesperados** (por ejemplo, muchos usuarios en un momento dado
 aumentan los costos de red, entre otras cosas).
 
 ## Parte 4: Conclusión
