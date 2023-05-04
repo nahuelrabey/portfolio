@@ -1,4 +1,5 @@
 ---
+slug: elegir-proveedor-nube
 title: Cómo elegir el mejor proveedor de nube para tu empresa o negocio
 image: /images/servers.jpg
 date: 20-04-2023

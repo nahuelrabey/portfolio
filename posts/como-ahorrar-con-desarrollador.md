@@ -1,4 +1,5 @@
 ---
+slug: como-ahorrar-con-desarrollador
 title: Porqué contratar un desarrollador web genera dinero
 image: /images/money.jpg
 date: 20-04-2023

@@ -6,6 +6,7 @@ import { inspect } from "util";
 import { join } from "path";
 
 export type PostParams = {
+  slug: string;
   title: string;
   image: string;
   date: string;
@@ -15,6 +16,7 @@ export type PostParams = {
 };
 
 export const isPost = objectOf<PostParams>({
+  slug: string,
   title: string,
   date: string,
   image: string,
@@ -27,30 +29,36 @@ function getPath() {
   return join(process.cwd(), `/posts`);
 }
 
-export function listPosts(){
+export function listPosts() {
   const POSTS_PATH = getPath();
   const files = fs.readdirSync(POSTS_PATH);
-  const posts = files.map((fname)=>{
-    const fileContent = fs.readFileSync(join(POSTS_PATH, fname), "utf-8")
-    const {data} = matter(fileContent)
-    if (!isPost(data)){
+  const posts = files.map((fname) => {
+    const fileContent = fs.readFileSync(join(POSTS_PATH, fname), "utf-8");
+    const { data } = matter(fileContent);
+    if (!isPost(data)) {
       throw (
         "data doesn't match post structure\n" + inspect(data, { depth: null })
       );
     }
-    return data
-  })
-  return posts
+    return data;
+  });
+  return posts;
 }
 
 export function listSlugs() {
   const POSTS_PATH = getPath();
   const files = fs.readdirSync(POSTS_PATH);
-  const slugs = files.map((fname)=>{
-      const slug = fname.replace(".md", "");
-      return slug;
-  })
-  return slugs
+  const slugs = files.map((fname) => {
+    const fileContent = fs.readFileSync(join(POSTS_PATH, fname), "utf-8");
+    const { data } = matter(fileContent);
+    if (!isPost(data)) {
+      throw (
+        "data doesn't match post structure\n" + inspect(data, { depth: null })
+      );
+    }
+    return data.slug
+  });
+  return slugs;
 }
 
 export function readPost(fileName: string) {
