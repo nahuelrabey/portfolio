@@ -92,7 +92,7 @@ fueron creados, sin querer abarcar áreas para las cuales no fueron pensadas.
 
 Integrar todo esto en una plataforma web requiere del uso de lenguajes de
 programación que se comuniquen con estos servicios para mostrarlos en la web. En
-este terreno no hay una única solución prefabricada, se depende de un
+este terreno no hay una única solución prefabricada, se requiere de un
 profesional que sepa orquestar esto de una forma armónica y útil para que el
 negocio funcione óptimamente.
 
@@ -105,19 +105,19 @@ Esta integración debe hacerse de forma paulatina, y a medida que va surgiendo l
 necesidad. No es un sistema dado, ya que debe modificarse, actualizarse y
 adaptarse con el tiempo y el crecimiento de la empresa. 
 
-Este es el sentido del escalado horizontal, primero se tienen una pequeña
+Este es el sentido del escalado horizontal, primero se tiene una pequeña
 landing, luego un blog con wordpress, quizás incluso una tienda, un servicio
-online, un gestor de inventario, todo coordinado a través de un software propio
-que permita mostrar fácilmente todo este contenido en internet.
+online, con el tiempo se agrega un gestor de inventario; todo coordinado a
+través de un software propio que permita mostrar este contenido en internet.
 
 Una inversión constante en este sentido, garantiza un engranaje aceitado para
 generar ingresos constantes y crecientes en el tiempo. 
 
 ## Conclusión 
 
-Wordpress, claro que sí, funciona de maravilla, para lo que es: un gestor de
-contenido para blogs; para todo lo demás, no sólo flaquea, sino que se vuelve
-complejo de manejar y administrar, y sobre todo, lento para los clientes. La
-mejor salida a este embrollo, es modernizarnos progresivamente y separar la
-página, lo que muestra la página, de las herramientas que usamos día a día.
+Wordpress, claro que sí, funciona de maravilla para lo que es: un gestor de
+blogs; para todo lo demás, no sólo flaquea, sino que se vuelve complejo de
+manejar y administrar, y sobre todo, lento para los clientes. La mejor salida a
+este embrollo, es modernizarnos progresivamente y separar la página de las
+herramientas que usamos día a día.
 
