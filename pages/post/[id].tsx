@@ -7,7 +7,7 @@ type ArticleParams = { matter: PostParams; content: string };
 export default function Article({ matter, content }: ArticleParams) {
   return (
     <>
-      <Post image={matter.image} title={matter.title} date={matter.date}>
+      <Post image={matter.image} title={matter.title} date={matter.date} slug="">
         <ReactMarkdown>{content}</ReactMarkdown>
       </Post>
     </>

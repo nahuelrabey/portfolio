@@ -57,10 +57,9 @@ A medida que adquiere clientes y abre líneas de trabajo, un blog que toque tema
 del rubro se vuelve muy necesario para mostrar conocimiento del área, además de
 llegar a nuevos clientes. Si tiene un local dónde se venden computadoras es
 indispensable contar con un blog dónde se hagan reviews de las máquinas que
-vende, o trabajar con marketing de afiliados para influencers. Una buena
-estrategia a largo plazo, requiere transformar a su negocio en el lugar dónde la
-gente busque información sobre los productos que vende o los servicios que
-ofrece.
+vende. Una buena estrategia a largo plazo, requiere transformar a su negocio en
+el lugar dónde la gente busque información sobre los productos que vende o los
+servicios que ofrece.
 
 Para este periódo, wordpress es la mejor herramienta, porque está pensado para
 trabajar de esta forma. Puede incluso, cómo mencioné anteriormente, agregarse
@@ -78,10 +77,13 @@ En este punto, Wordpress se vuelve inmanejable, con una cantidad exacerbada de
 plugins y personas trabajando en paralelo. Ya sería impracticable, por ejemplo,
 el manejo de Stock y su coordinación con las ventas de la página. Se
 transformaría en una herramienta lenta e ineficiente, para las tareas que
-intenta abarcar. Escalado horizontal. El problema está en la integración de
-muchas utilidades en una herramienta cuyo principal objetivo son los blogs.
-Wordpress es una solución de corto a mediano plazo, pero que no se puede
-proyectar a futuro
+intenta abarcar. 
+
+## Escalado horizontal. 
+
+El problema está en la integración de muchas utilidades en una herramienta cuyo
+principal objetivo son los blogs. Wordpress es una solución de corto a mediano
+plazo, pero que no se puede proyectar a futuro
 
 Sin embargo, cómo gestor de contenido, de notas ¡Wordpress es asombroso! Lo
 mismo ocurre con otras herramientas de control de Stock, o puntos de venta
