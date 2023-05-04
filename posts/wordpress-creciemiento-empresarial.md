@@ -3,7 +3,7 @@ slug: wordpress-creciemiento-empresarial
 title: Wordpress ¿Sí o no? Una mirada desde el crecimiento empresarial.
 image: /images/wordpress.jpg
 date: 04-05-2023
-og_image: 'https://i.ibb.co/gJWwz7J/ahorrar-tiempo-dinero-1.png'
+og_image: 'https://i.ibb.co/WV8PqfM/Facebook-post-4.png'
 # desc: >-
 #   ¿Quieres ahorrar dinero y tiempo en tu proyecto web? te cuento porqué
 #   contratar a un desarrollador profesional te garantizará calidad y eficiencia.
