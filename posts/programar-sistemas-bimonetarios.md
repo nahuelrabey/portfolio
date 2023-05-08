@@ -3,7 +3,7 @@ slug: programar-sistemas-bimonetarios
 title: Cómo programar software para mercados bimonetarios
 image: /images/moneys.jpg
 date: 20-04-2023
-og_image: 'https://i.ibb.co/gJWwz7J/ahorrar-tiempo-dinero-1.png'
+og_image: 'https://i.ibb.co/0G2p1t2/Facebook-post-5.png'
 # desc: >-
 #   ¿Quieres ahorrar dinero y tiempo en tu proyecto web? te cuento porqué
 #   contratar a un desarrollador profesional te garantizará calidad y eficiencia.
