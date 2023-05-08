@@ -1,6 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import { PostParams, listSlugs, readPost } from "../../libs/posts";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import Post from "../../components/Post";
 
 type ArticleParams = { matter: PostParams; content: string };
@@ -8,7 +9,7 @@ export default function Article({ matter, content }: ArticleParams) {
   return (
     <>
       <Post image={matter.image} title={matter.title} date={matter.date} slug="" og_image={matter.og_image || ""}>
-        <ReactMarkdown>{content}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
       </Post>
     </>
   );

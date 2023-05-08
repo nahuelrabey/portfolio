@@ -72,6 +72,33 @@
   a:active{
     opacity: 1;
   }
+
+  table{
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th{
+    font-weight: 400;
+  }
+
+  td{
+    font-weight: 300;
+  }
+
+  th,td{
+    text-align: left;
+    padding: .35em 1em;
+  }
+
+  tr:nth-child(even){
+    background-color: #E5F9DB;
+  }
+
+  img{
+    display: block;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 768px) {

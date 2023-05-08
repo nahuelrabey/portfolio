@@ -45,6 +45,22 @@ export function listPosts() {
   return posts;
 }
 
+export function getBatchPosts(names:string[]){
+  const POSTS_PATH = getPath();
+  const files = fs.readdirSync(POSTS_PATH).filter((file)=>names.includes(file));
+  const posts = files.map((fname) => {
+    const fileContent = fs.readFileSync(join(POSTS_PATH, fname), "utf-8");
+    const { data } = matter(fileContent);
+    if (!isPost(data)) {
+      throw (
+        "data doesn't match post structure\n" + inspect(data, { depth: null })
+      );
+    }
+    return data;
+  });
+  return posts;
+}
+
 export function listSlugs() {
   const POSTS_PATH = getPath();
   const files = fs.readdirSync(POSTS_PATH);

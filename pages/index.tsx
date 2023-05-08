@@ -8,14 +8,14 @@ import Services from "../components/Services";
 import Footer from "../components/Footer";
 import BlogFeed from "../components/BlogFeed";
 
-import {PostParams, listPosts} from "../libs/posts"
+import { PostParams, getBatchPosts, listPosts, readPost } from "../libs/posts";
 
 // import {CiTwitter} from "react-icons/ci"
 // fonts
 const inter = Inter({ subsets: ["latin"] });
 
-type params = { skills: ISkill[], posts: PostParams[] };
-export default function Home({ skills, posts }: params) {
+type params = { skills: ISkill[]; posts: PostParams[]; tapa: PostParams };
+export default function Home({ skills, posts, tapa }: params) {
   return (
     <>
       <Head>
@@ -24,7 +24,10 @@ export default function Home({ skills, posts }: params) {
           name="description"
           content="Conmigo tenes todo lo necesario para tener una página web. No importa si necesitás una tienda, un blog o mostrar datos de mercado en vivo. Diseño soluciones a medida para tus necesidades y objetivos."
         />
-        <meta name="keywords" content="programador, desarrollador web, diseñador web, diseño web, desarrollo web,programador en Buenos Aires, desarrollador web en Buenos Aires, diseñador web en Buenos Aires" />
+        <meta
+          name="keywords"
+          content="programador, desarrollador web, diseñador web, diseño web, desarrollo web,programador en Buenos Aires, desarrollador web en Buenos Aires, diseñador web en Buenos Aires"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           property="og:image"
@@ -34,7 +37,7 @@ export default function Home({ skills, posts }: params) {
       </Head>
       <main style={inter.style}>
         <Header skills={skills} />
-        <BlogFeed posts={posts}/>
+        <BlogFeed pesos={posts} tapa={tapa}/>
         <Services />
         <Experience />
         <Footer />
@@ -59,11 +62,19 @@ export const getStaticProps: GetStaticProps<params> = async () => {
         "“El precio de la luz es menor que el costo de la oscuridad.” – Arthur C. Nielsen",
     },
   ];
-  const posts = listPosts()
+  const _tapa = "programar-sistemas-bimonetarios";
+  const tapa = readPost(_tapa).data
+  const pesos = [
+    "wordpress-creciemiento-empresarial.md",
+    "elegir-proveedor-nube.md",
+    "como-ahorrar-con-desarrollador.md",
+  ];
+  const posts = getBatchPosts(pesos);
   return {
     props: {
       skills,
-      posts
+      posts,
+      tapa,
     },
   };
 };

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Footer from "../Footer";
 import Menu from "../Menu";
 import style from "./Post.module.scss";
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], weight:["100","200","300","400","500","600"] });
 
 import {PostParams} from "../../libs/posts"
 

@@ -3,31 +3,49 @@ import style from "./Feed.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
-type params = { posts: PostParams[] };
-export default function Feed({ posts }: params) {
+type params = { pesos: PostParams[]; tapa: PostParams };
+export default function Feed({ pesos, tapa }: params) {
   return (
     <>
       <section className={style.Feed}>
-        {posts.map(({ title, image, date, slug }, index) => {
-          return (
-            <article key={index}>
-              <Link href={`post/${slug}`} className={style.link}>
-                <div className={style.imgwrapper}>
-                  <Image
-                    alt={`${title} post image`}
-                    src={image}
-                    fill
-                    style={{ objectFit: "cover" }}
-                  />
-                </div>
-                <div className={style.header}>
-                  <h3>{title}</h3>
-                  <span>{date}</span>
-                </div>
-              </Link>
-            </article>
-          );
-        })}
+        <section className={style.tapa}>
+          <Link href={`post/${tapa.slug}`} className={style.link}>
+            <div className={style.imgwrapper}>
+              <Image
+                alt={`${tapa.title} imagen de post`}
+                src={tapa.image}
+                fill
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+            <div className={style.header}>
+              <h3>{tapa.title}</h3>
+              <span>{tapa.date}</span>
+            </div>
+          </Link>
+        </section>
+        <section className={style.pesos}>
+          {pesos.map(({ title, image, date, slug }, index) => {
+            return (
+              <article key={index}>
+                <Link href={`post/${slug}`} className={style.link}>
+                  <div className={style.imgwrapper}>
+                    <Image
+                      alt={`${title} post image`}
+                      src={image}
+                      fill
+                      style={{ objectFit: "cover" }}
+                    />
+                  </div>
+                  <div className={style.header}>
+                    <h3>{title}</h3>
+                    <span>{date}</span>
+                  </div>
+                </Link>
+              </article>
+            );
+          })}
+        </section>
       </section>
     </>
   );
