@@ -8,7 +8,7 @@ export default function Feed({ pesos, tapa }: params) {
   return (
     <>
       <section className={style.Feed}>
-        <h2>últimas publicaciónes</h2>
+        <h2>Últimas publicaciones</h2>
         <div className={style.pesos}>
           {pesos.map(({ title, image, date, slug }, index) => {
             return (
