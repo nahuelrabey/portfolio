@@ -8,23 +8,8 @@ export default function Feed({ pesos, tapa }: params) {
   return (
     <>
       <section className={style.Feed}>
-        <section className={style.tapa}>
-          <Link href={`post/${tapa.slug}`} className={style.link}>
-            <div className={style.imgwrapper}>
-              <Image
-                alt={`${tapa.title} imagen de post`}
-                src={tapa.image}
-                fill
-                style={{ objectFit: "cover" }}
-              />
-            </div>
-            <div className={style.header}>
-              <h3>{tapa.title}</h3>
-              <span>{tapa.date}</span>
-            </div>
-          </Link>
-        </section>
-        <section className={style.pesos}>
+        <h2>últimas publicaciónes</h2>
+        <div className={style.pesos}>
           {pesos.map(({ title, image, date, slug }, index) => {
             return (
               <article key={index}>
@@ -45,7 +30,7 @@ export default function Feed({ pesos, tapa }: params) {
               </article>
             );
           })}
-        </section>
+        </div>
       </section>
     </>
   );

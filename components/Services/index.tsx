@@ -25,7 +25,7 @@ export default function Services() {
                 <li>Empresas de servicios</li>
               </ul>
             </div>
-            <div>
+            {/* <div>
               <h4>Precio</h4>
               <table className={style.prices}>
                 <tbody>
@@ -43,7 +43,7 @@ export default function Services() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </div> */}
           </article>
           <article className={style.service}>
             <h3>Web Dinámica</h3>
@@ -63,7 +63,7 @@ export default function Services() {
                 <li>Influencers</li>
               </ul>
             </div>
-            <div>
+            {/* <div>
               <h4>Precio</h4>
               <table className={style.prices}>
                 <tbody>
@@ -84,7 +84,7 @@ export default function Services() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </div> */}
           </article>
           <article className={style.service}>
             <h3>Data Dashboards</h3>
@@ -104,7 +104,7 @@ export default function Services() {
                 <li>Fondos de inversión</li>
               </ul>
             </div>
-            <div>
+            {/* <div>
               <h4>Precio</h4>
               <table className={style.prices}>
                 <tbody>
@@ -125,7 +125,7 @@ export default function Services() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </div> */}
           </article>
         </div>
       </div>

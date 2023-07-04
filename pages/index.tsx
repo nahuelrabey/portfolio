@@ -37,9 +37,9 @@ export default function Home({ skills, posts, tapa }: params) {
       </Head>
       <main style={inter.style}>
         <Header skills={skills} />
-        <BlogFeed pesos={posts} tapa={tapa}/>
         <Services />
         <Experience />
+        <BlogFeed pesos={posts} tapa={tapa}/>
         <Footer />
       </main>
     </>
