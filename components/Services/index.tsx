@@ -2,8 +2,8 @@ import style from "./Services.module.css";
 
 export default function Services() {
   return (
-    <section className={style.servicesSection}>
-      <div className={style.container}>
+    <section className={`${style.servicesSection}`}>
+      <div className={`${style.container} Content`}>
         <h2>Servicios</h2>
         <div className={style.services}>
           <article className={style.service}>

@@ -1,7 +1,7 @@
 import style from "./Experience.module.css";
 export default function Experience() {
   return (
-      <section className={style.experiencia}>
+      <section className={`${style.experiencia} Content`}>
         <h2>Proyectos Destacados</h2>
         <div className={style.timeline}>
           <article className={style.job}>

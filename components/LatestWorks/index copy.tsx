@@ -1,4 +1,4 @@
-import { listPosts, PostParams } from "../../libs/posts";
+import { PostParams } from "../../libs/posts";
 import style from "./Feed.module.scss";
 import Image from "next/image";
 import Link from "next/link";

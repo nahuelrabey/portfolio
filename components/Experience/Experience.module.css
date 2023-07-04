@@ -1,20 +1,3 @@
-.experiencia {
-  width: 70vw;
-  margin: auto;
-}
-
-@media screen and (max-width: 769px){
-    .experiencia {
-      width: 80vw;
-    }
-}
-
-@media screen and (max-width: 426px){
-    .experiencia {
-      width: 90vw;
-    }
-}
-
 .experiencia h2 {
   margin: 10vh auto;
 }

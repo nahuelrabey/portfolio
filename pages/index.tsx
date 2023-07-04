@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import BlogFeed from "../components/BlogFeed";
 
 import { PostParams, getBatchPosts, listPosts, readPost } from "../libs/posts";
+import LatestWorks from "../components/LatestWorks";
 
 // import {CiTwitter} from "react-icons/ci"
 // fonts
@@ -39,6 +40,7 @@ export default function Home({ skills, posts, tapa }: params) {
         <Header skills={skills} />
         <Services />
         <Experience />
+        <LatestWorks/>
         <BlogFeed pesos={posts} tapa={tapa}/>
         <Footer />
       </main>
