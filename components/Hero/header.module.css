@@ -19,23 +19,6 @@
   margin-bottom: 3vh;
 }
 
-.header h2 {
-  font-size: 2em;
-  /* margin-bottom: 2vh; */
-  font-weight: 200;
-}
-
-.header span {
-  font-size: 1em;
-  font-weight: 100;
-}
-
-.hello {
-  animation: fadeIn 4s;
-  height: 10em;
-  width: 40vw;
-}
-
 .blob {
   display: block;
   position: relative;

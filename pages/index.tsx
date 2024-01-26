@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Inter } from "@next/font/google";
 import { GetServerSideProps, GetStaticProps } from "next";
 import { ISkill } from "../components/Skills";
-import Header from "../components/Header";
+import Hero from "../components/Hero";
 import Experience from "../components/Experience";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
@@ -37,10 +37,10 @@ export default function Home({ skills, posts, tapa }: params) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main style={inter.style}>
-        <Header skills={skills} />
+        <Hero skills={skills} />
+        <LatestWorks/>
         <Services />
         <Experience />
-        <LatestWorks/>
         <BlogFeed pesos={posts} tapa={tapa}/>
         <Footer />
       </main>
