@@ -7,7 +7,23 @@ export default function LatestWorks() {
       <h2>Últimos trabajos</h2>
       <div className={style.pesos}>
         <article>
-          <Link href="https://biosufert.com/" className={style.link}>
+          <Link target="_blank" href="https://buhomedia.com.ar/" className={style.link}>
+            <div className={style.imgwrapper}>
+              <Image
+                alt="biosufert sitio web captura de pantalla"
+                src="/images/websites/buhomedia.png"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+            <div className={style.header}>
+              <h3>Buhomedia</h3>
+              <h4>Agencia de Marketing Digital</h4>
+            </div>
+          </Link>
+        </article>
+        <article>
+          <Link target="_blank" href="https://biosufert.com/" className={style.link}>
             <div className={style.imgwrapper}>
               <Image
                 alt="biosufert sitio web captura de pantalla"
@@ -23,7 +39,7 @@ export default function LatestWorks() {
           </Link>
         </article>
         <article>
-          <Link href="https://ott-ingenieria.cl/" className={style.link}>
+          <Link target="_blank" href="https://ott-ingenieria.cl/" className={style.link}>
             <div className={style.imgwrapper}>
               <Image
                 alt="ott sitio web captura de pantalla"
@@ -39,7 +55,7 @@ export default function LatestWorks() {
           </Link>
         </article>
         <article>
-          <Link href="https://www.uquant.com.ar/" className={style.link}>
+          <Link target="_blank" href="https://www.uquant.com.ar/" className={style.link}>
             <div className={style.imgwrapper}>
               <Image
                 alt="uquant sitio web captura de pantalla"

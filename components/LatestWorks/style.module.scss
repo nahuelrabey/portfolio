@@ -35,12 +35,16 @@
   }
 }
 .pesos {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  // display: flex;
+  // justify-content: space-between;
+  // gap: 1.5em;
+  // align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
 
   article {
-    width: 25%;
+    // width: 25%;
     height: 45vh;
     // padding: 1em;
     // border: 1px solid black;
@@ -79,7 +83,7 @@
 @media screen and (max-width: 1024px) {
   .pesos {
     article {
-      width: 30%;
+      // width: 30%;
       .header {
         h3 {
           font-size: 1.5em;
